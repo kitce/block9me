@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "declaration-bang-space-after": "never",
+    "declaration-bang-space-before": "always",
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-trailing-semicolon": "always",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        ignorePseudoClasses: [
+          "global"
+        ]
+      }
+    ],
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "screen"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+@import 'tailwindcss/components';
+@import '../base';
+
+.container {
+  @apply w-full;
+  @apply px-4;
+  @apply mx-auto;
+}
