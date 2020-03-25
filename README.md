@@ -1,8 +1,6 @@
-# Viennetta
+# Block9me
 
-Webpack-Babel-TypeScript-Sass Boilerplate (featuring Gulp, CSS Modules, PostCSS, Tailwind...)
-
-Various examples for popular frontend frameworks can be found on the branches `example/*`.
+Simple blocky identicon generator
 
 ## Development
 Edit files in `src/` as necessary
@@ -16,10 +14,6 @@ Then visit http://localhost:8000
 yarn build
 ```
 Distributable files will be available at `dist/`
-
-## TODOs
-- [x] Watch `*.scss` and rebuild `*.scss.d.ts` when running `webpack-dev-server`
-- [ ] Make sample index page looks good
 
 ## License
 MIT License
