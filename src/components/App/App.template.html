@@ -1,3 +1,10 @@
-<div :class="styles.app">
-  {{ message }}
-</div>
+<main :class="[layout.container, styles.app]">
+  <h1>Block9me</h1>
+  <block9me-blocky :class="styles.blocky" v-bind="options"></block9me-blocky>
+  <block9me-form :class="styles.form" @submit="handleSubmit"></block9me-form>
+  <footer :class="styles.footer">
+    <span>&copy; 2020 <a href="https://github.com/kitce" target="_blank">kit</a></span>
+    <span><a href="https://github.com/kitce/block9me" target="_blank">Source code</a></span>
+    <span><a href="https://github.com/kitce/block9me/blob/master/LICENSE" target="_blank">MIT License</a></span>
+  </footer>
+</main>

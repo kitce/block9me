@@ -1,4 +1,33 @@
+@import '../../stylesheets/base';
+
 .app {
-  @apply w-24 h-24;
-  @apply border-solid border-2 border-blue-500;
+  @apply flex flex-col items-center;
+  @apply py-4;
+  max-width: $tw-screens-sm-min;
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  .blocky {
+    @apply mt-4;
+  }
+
+  .form,
+  .footer {
+    @apply mt-8;
+  }
+
+  .footer {
+    @apply flex justify-center flex-wrap;
+
+    span {
+      + span {
+        &:before {
+          content: '-';
+          @apply mx-2;
+        }
+      }
+    }
+  }
 }

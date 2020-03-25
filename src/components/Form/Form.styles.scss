@@ -1,0 +1,70 @@
+@import '../../stylesheets/base';
+
+.form {
+  @apply w-full;
+  @apply text-xl;
+
+  .row {
+    @apply flex items-center justify-between;
+
+    + .row {
+      @apply mt-4;
+    }
+  }
+
+  label {
+    @apply flex-1;
+  }
+
+  input {
+    // @apply h-12;
+    @apply w-48;
+    @apply ml-4;
+    @apply rounded;
+
+    @screen sm {
+      @apply w-56;
+    }
+
+    &[type='color'] {
+      &::-webkit-color-swatch-wrapper {
+        @apply p-0;
+      }
+    }
+
+    &[type='text'],
+    &[type='number'] {
+      background-color: $md-grey-800;
+      @apply px-2 py-1;
+    }
+  }
+
+  button {
+    @apply px-4 py-2;
+    @apply border border-solid;
+    border-color: $md-grey-800;
+    @apply rounded-full;
+    transition: all .3s ease;
+
+    + button {
+      @apply ml-4;
+    }
+
+    &:focus, &:hover {
+      background-color: $md-grey-800;
+    }
+
+    &.primary {
+      background-color: $md-lime-900;
+
+      &:focus, &:hover {
+        background-color: $md-lime-800;
+      }
+    }
+  }
+
+  .footer {
+    @apply flex items-center justify-center;
+    @apply mt-8;
+  }
+}

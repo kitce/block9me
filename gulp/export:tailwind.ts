@@ -8,7 +8,8 @@ const task: gulp.TaskFunction = () => {
     config,
     destination: scss.variables.tailwind,
     format: 'scss',
-    prefix: 'tw'
+    prefix: 'tw',
+    flat: true
   });
   return converter.writeToFile();
 };

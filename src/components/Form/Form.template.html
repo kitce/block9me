@@ -1,0 +1,32 @@
+<form :class="styles.form" @submit.prevent="submit">
+  <fieldset>
+    <div :class="styles.row">
+      <label for="seed">Seed</label>
+      <input id="seed" type="text" v-model="options.seed" />
+    </div>
+    <div :class="styles.row">
+      <label for="color">Color</label>
+      <input id="color" type="color" v-model="options.color" />
+    </div>
+    <div :class="styles.row">
+      <label for="background-color">Background color</label>
+      <input id="background-color" type="color" v-model="options.backgroundColor" />
+    </div>
+    <div :class="styles.row">
+      <label for="spot-color">Spot color</label>
+      <input id="spot-color" type="color" v-model="options.spotColor" />
+    </div>
+    <div :class="styles.row">
+      <label for="size">Size</label>
+      <input id="size" type="number" min="1" v-model="options.size" />
+    </div>
+    <div :class="styles.row">
+      <label for="scale">Scale</label>
+      <input id="scale" type="number" min="1" v-model="options.scale" />
+    </div>
+  </fieldset>
+  <footer :class="styles.footer">
+    <button @click="random">Random</button>
+    <button :class="styles.primary" type="submit">Generate</button>
+  </footer>
+</form>
