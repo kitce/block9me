@@ -17,7 +17,7 @@ const prod: webpack.Configuration = {
   mode: 'production',
   output: {
     filename: '[name].bundle.[hash].js',
-    path: path.join(__dirname, '/dist')
+    path: path.join(process.cwd(), '/dist')
   },
   module: {
     rules: [
