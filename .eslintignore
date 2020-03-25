@@ -1,3 +1,4 @@
 *.scss.d.ts
 *.css.d.ts
 dist/
+src/third-party

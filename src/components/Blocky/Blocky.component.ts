@@ -1,7 +1,7 @@
-import { renderIcon } from '@download/blockies';
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import { Prop, Watch } from 'vue-property-decorator';
+import * as blockies from '../../third-party/blockies';
 
 import { IBlocky } from '../../helpers/blocky';
 
@@ -38,7 +38,7 @@ export default class Blocky extends Vue implements IBlocky {
   private renderIcon () {
     const { options } = this;
     const { canvas } = this.$refs;
-    renderIcon(options, canvas);
+    blockies.render(options, canvas);
   }
 
   mounted () {
