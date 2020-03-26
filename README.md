@@ -7,7 +7,7 @@ Edit files in `src/` as necessary
 ```bash
 yarn dev
 ```
-Then visit http://localhost:8000
+Then visit http://localhost:8080
 
 ## Build
 ```bash
