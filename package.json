@@ -1,7 +1,7 @@
 {
-  "name": "viennetta",
-  "description": "Webpack-Babel-TypeScript-Sass Boilerplate",
-  "version": "0.0.1",
+  "name": "block9me",
+  "description": "Simple blocky identicon generator",
+  "version": "1.0.0",
   "license": "MIT",
   "engines": {
     "node": ">=12",
